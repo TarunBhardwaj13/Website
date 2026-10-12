@@ -15,6 +15,7 @@ public class HandleAdmin extends HttpServlet {
 
         HandleDatabase db = new HandleDatabase();
         int userId = Integer.parseInt(req.getParameter("userId"));
+
         String action = req.getParameter("action");
 
         if("make".equals(action)){
