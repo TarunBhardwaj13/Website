@@ -1,0 +1,420 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/*===================== Container =====================*/
+
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+}
+
+
+/*===================== Sidebar =====================*/
+
+.sidebar {
+    width: 230px;
+    background: #00695c;
+    color: white;
+
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Logo Section */
+.logo {
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+}
+
+.logo img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3. MENU Heading & Links */
+.sidebar h2 {
+    padding: 15px 20px 5px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #00897b;
+}
+
+.active {
+    background: #009688;
+}
+
+
+.sidebar .home {
+    margin-top: auto;
+}
+
+.sidebar .home a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+
+.sidebar .home a:hover {
+    background: #00897b;
+    color: #ffd54f !important;
+}
+
+/*===================== Content =====================*/
+
+.content{
+
+    flex:1;
+
+    padding:30px;
+
+    overflow-y:auto;
+
+}
+
+
+/*===================== Title =====================*/
+
+.title{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+}
+
+.title h1{
+
+    color:#0b5d57;
+
+    margin-bottom:10px;
+
+}
+
+.title p{
+
+    color:gray;
+
+    font-size:17px;
+
+}
+
+
+/*===================== Search =====================*/
+
+.searchBox{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+}
+
+.searchBox form{
+
+    display:flex;
+
+}
+
+.searchBox input{
+
+    flex:1;
+
+    height:50px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px 0 0 8px;
+
+    padding:0 18px;
+
+    font-size:18px;
+
+    outline:none;
+
+}
+
+.searchBox button{
+
+    width:170px;
+
+    border:none;
+
+    background:#0b8c84;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:0 8px 8px 0;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.searchBox button:hover{
+
+    background:#0b5d57;
+
+}
+
+
+/*===================== Cards =====================*/
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+    color:#0b5d57;
+
+}
+
+
+/*===================== Table =====================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#e8f7f6;
+
+    color:#0b5d57;
+
+    padding:15px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+table td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+    font-size:17px;
+
+}
+
+table tr:hover{
+
+    background:#f8ffff;
+
+}
+
+
+/*===================== Status =====================*/
+
+.adminStatus{
+
+    background:#c9f7d5;
+
+    color:#14823c;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+}
+
+.notAdmin{
+
+    background:#ffe7a6;
+
+    color:#d97706;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+}
+
+
+/*===================== Buttons =====================*/
+
+.addBtn{
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.addBtn:hover{
+
+    background:#15803d;
+
+}
+
+.removeBtn{
+
+    background:#dc2626;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.removeBtn:hover{
+
+    background:#b91c1c;
+
+}
+
+
+/*===================== Scroll =====================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#0b8c84;
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ddd;
+
+}
+
+
+/*===================== Responsive =====================*/
+
+@media(max-width:900px){
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+        height:auto;
+
+    }
+
+    .searchBox form{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .searchBox input{
+
+        border-radius:8px;
+
+    }
+
+    .searchBox button{
+
+        width:100%;
+        border-radius:8px;
+
+    }
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+
+    }
+
+}

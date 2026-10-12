@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.container{
+    width:95%;
+    margin:30px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:25px;
+}
+
+/*================ LEFT =================*/
+
+.leftContainer{
+    width:65%;
+}
+
+.backBtn{
+    text-decoration:none;
+    color:#0b8f3d;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.backBtn img{
+   width:16px;
+}
+
+.leftContainer h1{
+    margin:20px 0 10px;
+    font-size:40px;
+}
+
+.subTitle{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.paymentBox{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:25px;
+}
+
+.paymentBox label{
+    display:flex;
+    gap:20px;
+    cursor:pointer;
+}
+
+.paymentBox input[type="radio"]{
+    width:22px;
+    height:22px;
+    margin-top:5px;
+}
+
+.paymentContent h2{
+    margin-bottom:10px;
+}
+
+.paymentContent p{
+    color:#666;
+    line-height:24px;
+}
+
+/*================ QR =================*/
+
+.qrSection{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    margin-top:30px;
+}
+
+.qrImage{
+    width:220px;
+    height:220px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.upiDetails h3{
+    margin-top:15px;
+}
+
+.upiDetails p{
+    color:#0b8f3d;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.paymentNote{
+    margin-top:25px;
+    background:#f2fbf3;
+    border:1px solid #d4ecd7;
+    padding:18px;
+    border-radius:8px;
+    color:#333;
+}
+
+.transactionBox{
+    margin-top:25px;
+}
+
+.transactionBox label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.transactionBox input{
+    width:100%;
+    height:50px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    padding:0 15px;
+    font-size:16px;
+}
+
+.transactionBox input:focus{
+    border-color:#0b8f3d;
+    outline:none;
+}
+
+/*================ BUTTON =================*/
+
+.placeOrderBtn{
+    width:100%;
+    height:55px;
+    background:#0b8f3d;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.placeOrderBtn:hover{
+    background:#087232;
+}
+
+/*================ RIGHT =================*/
+
+.rightContainer{
+    width:35%;
+
+}
+
+.orderSummary{
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    position:sticky;
+    top:20px;
+}
+
+
+.summaryHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.summaryHeader img{
+  width:18px;
+}
+
+.productBox{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin:20px 0;
+}
+
+.medicineImage{
+    width:90px;
+    height:90px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    object-fit:contain;
+}
+
+.productInfo{
+    flex:1;
+}
+
+.productInfo h3{
+    margin-bottom:6px;
+}
+
+.productInfo p{
+    color:#666;
+    margin-top:5px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.amountRow{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.amountRow img{
+  width:16px;
+}
+
+.totalRow{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.green{
+    color:#0b8f3d;
+    font-weight:bold;
+}
+
+.green img{
+  width:16px;
+}
+
+/*.summarySecureBox{
+    margin-top:25px;
+    background:#f2fbf3;
+    border:1px solid #d4ecd7;
+    padding:18px;
+    border-radius:8px;
+}
+
+.summarySecureBox p{
+    margin-top:8px;
+    color:#555;
+}*/
+
+/*================ RESPONSIVE =================*/
+
+@media(max-width:992px){
+
+.container{
+    flex-direction:column;
+}
+
+.leftContainer,
+.rightContainer{
+    width:100%;
+}
+
+.qrSection{
+    flex-direction:column;
+    align-items:flex-start;
+}
+}
+
+
+
+
+.paymentInfo{
+    margin-top:20px;
+    width:100%
+
+}
+
+.infoBox{
+    width:100%
+    margin-bottom:15px;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    padding:15px;
+    margin-top:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+.secureBox{
+    background:#f6fff7;
+    border-color:#b7e4c7;
+}
+
+.afterPayBox{
+    background:#f5f9ff;
+    border-color:#b6d4fe;
+}
+
+.icon{
+    font-size:24px;
+}
+
+.infoBox h4{
+    margin:0 0 5px;
+    font-size:18px;
+}
+
+.infoBox p{
+    margin:0;
+    color:#555;
+    font-size:14px;
+}

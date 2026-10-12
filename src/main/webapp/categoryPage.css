@@ -1,0 +1,531 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+.container{
+    width:100%;
+}
+
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    padding:18px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Sidebar Box */
+
+.sidebar-box{
+    margin-bottom:35px;
+}
+
+/* Heading */
+
+.sidebar-box h3{
+    font-size:20px;
+    color:#006b54;
+    font-weight:700;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+
+
+/* Category List */
+
+.category-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.category-list li{
+    margin-bottom:8px;
+}
+
+.category-list li a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    padding:12px 15px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.category-list li a:hover{
+    background:#eef8f4;
+    color:#006b54;
+}
+
+.category-list .active a{
+    background:#eef8f4;
+    color:#006b54;
+    font-weight:600;
+}
+
+/* Price Range */
+
+.price-range{
+    margin-top:20px;
+}
+
+/* Range */
+
+.price-range input[type=range]{
+    width:100%;
+    accent-color:#006b54;
+    cursor:pointer;
+}
+
+/* Price Value */
+
+.price-value{
+    display:flex;
+    justify-content:space-between;
+    margin:12px 0 20px;
+    font-size:16px;
+    color:#333;
+}
+
+.price-value img{
+  width:16px;
+}
+
+/* Apply Button */
+
+.price-range button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:6px;
+    background:#006b54;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.price-range button:hover{
+    background:#00503f;
+}
+.feature-section{
+
+    width:95%;
+    margin:40px auto;
+    background:#f8fbfa;
+    border:1px solid #e8e8e8;
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 15px;
+
+}
+
+.feature-box{
+
+    width:25%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+
+    padding:10px 20px;
+    border-right:1px solid #e5e5e5;
+
+}
+
+.feature-box:last-child{
+
+    border-right:none;
+
+}
+
+.feature-icon{
+
+    font-size:38px;
+    color:#006b54;
+
+}
+
+.feature-text h3{
+
+    font-size:22px;
+    margin-bottom:6px;
+    color:#222;
+
+}
+
+.feature-text p{
+
+    font-size:16px;
+    color:#666;
+
+}
+
+
+/* =======================
+   Product Section
+======================= */
+
+/*.mid{
+    width:95%;
+    margin:30px auto;
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}*/
+
+.product-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.product-header h1{
+    font-size:42px;
+    color:#222;
+    margin-bottom:8px;
+}
+
+.product-header p{
+    color:#666;
+    font-size:16px;
+}
+
+/* =======================
+   Sort Dropdown
+======================= */
+
+.sort-box select{
+
+    width:200px;
+    height:45px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    padding:0 15px;
+
+    background:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+/* =======================
+   Product Grid
+======================= */
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:22px;
+
+}
+
+/* =======================
+   Product Card
+======================= */
+
+.product-card{
+
+    background:#fff;
+
+    border:1px solid #ececec;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+/* =======================
+   Product Image
+======================= */
+
+.product-image{
+
+    height:170px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:15px;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+/* =======================
+   Product Details
+======================= */
+
+.product-info{
+
+    padding:15px;
+
+}
+
+.product-info h3{
+
+    font-size:20px;
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.company{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+
+}
+
+/* =======================
+   Price
+======================= */
+
+.price{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:15px;
+
+}
+
+.new-price{
+
+    color:#008060;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+}
+
+.old-price{
+
+    color:#999;
+
+    text-decoration:line-through;
+
+    font-size:15px;
+
+}
+
+.offer{
+
+    margin-left:auto;
+
+    background:#e8f7ec;
+
+    color:#1f9d55;
+
+    padding:4px 8px;
+
+    border-radius:5px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* =======================
+   Button
+======================= */
+
+.product-card button{
+
+    width:100%;
+
+    height:42px;
+
+    background:#fff;
+
+    color:#008060;
+
+    border:1px solid #008060;
+
+    border-radius:6px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.product-card button:hover{
+
+    background:#008060;
+
+    color:#fff;
+
+}
+
+
+.mid{
+    display:flex;
+    margin:20px auto;
+    gap:30px;
+}
+
+
+.sidebar{
+    width:260px;
+    flex-shrink:0;
+}
+
+.product-section{
+    height:calc(100vh - 180px);
+    flex:1;
+    width:95%;
+    height:150vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+/* view more Button */
+.view-btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#008060;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.view-btn:hover{
+    background:#00684d;
+}
+
+
+
+.medicineimages{
+    width:100%;
+    padding:20px;
+}
+
+.medicineimages table{
+    width:100%;
+    border-collapse:separate;
+    border-spacing:0 20px;
+}
+
+.medicineimages tr{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    border-radius:10px;
+}
+
+.medicineimages td{
+    padding:15px;
+    vertical-align:middle;
+    font-size:16px;
+    color:#333;
+}
+
+.medicineimages img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.medicineimages td:nth-child(2){
+    font-size:22px;
+    font-weight:bold;
+    color:#222;
+}
+
+.medicineimages td:nth-child(3){
+    color:#666;
+    width:220px;
+}
+
+.medicineimages td:nth-child(4){
+    color:#444;
+    width:260px;
+}
+
+.medicineimages td:nth-child(5){
+    font-size:24px;
+    font-weight:bold;
+    color:#008060;
+}
+
+.medicineimages td:nth-child(6){
+    color:#0a9446;
+    font-weight:bold;
+}
+
+.medicineimages td:nth-child(7){
+    color:#777;
+}
+
+.medicineimages td:nth-child(8){
+    max-width:320px;
+    line-height:24px;
+}

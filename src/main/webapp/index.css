@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e6f7ff,#f5fffd);
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.leftSide{
+    width:55%;
+}
+
+.leftSide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.rightSide{
+    width:45%;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+    box-shadow:-5px 0 20px rgba(0,0,0,0.08);
+}
+
+.rightSide h1{
+    font-size:38px;
+    color:#009688;
+    margin-bottom:10px;
+}
+
+.rightSide p{
+    color:#666;
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+#loginFrom,
+#signupForm{
+    display:flex;
+    flex-direction:column;
+}
+
+.Name,
+.Username,
+.Password,
+.email{
+    width:100%;
+    height:50px;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+    box-shadow:0px 3px 8px rgba(0,0,0,0.08);
+}
+
+.Name:focus,
+.Username:focus,
+.Password:focus,
+.email:focus{
+    border-color:#009688;
+    box-shadow:0 0 10px rgba(0,150,136,0.3);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#009688;
+    font-weight:500;
+}
+
+button{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#009688,#00bfa5);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0px 6px 15px rgba(0,150,136,0.3);
+}
+
+a{
+    color:#009688;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+

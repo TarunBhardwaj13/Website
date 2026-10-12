@@ -1,0 +1,374 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2f5;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+}
+
+/* ================= LEFT SIDEBAR ================= */
+
+.leftSide{
+    width:230px;
+    background:#045c58;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo img{
+    width:170px;
+    height:auto;
+}
+
+.leftSide img{
+    display:block;
+    width:170px;
+    margin:20px auto;
+}
+
+.leftSide h1, .leftSide h3{
+    font-size:18px;
+    padding-left:20px;
+    margin-top:10px;
+}
+
+.leftSide ul{
+    list-style:none;
+}
+
+.leftSide ul li{
+    margin:8px 15px;
+}
+
+.leftSide ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:14px 18px;
+    border-radius:6px;
+    transition:.3s;
+    font-size:15px;
+}
+
+.leftSide ul li:first-child a{
+    background:#0b8f86;
+}
+
+.leftSide ul li:hover a{
+    background:#0b8f86;
+}
+
+
+.outer-container {
+    position: relative;
+
+}
+
+.home {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+
+.home a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.home a:hover {
+    color: #e0f2f1 !important;
+    transform: translateX(-3px);
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.rightSide{
+    flex:1;
+    background:#f5f7fa;
+    overflow:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    height:70px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #ddd;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+header h1{
+    font-size:28px;
+    color:#222;
+}
+
+.admin{
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    padding:10px 18px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.admin:hover{
+    background:#009688;
+    color:white;
+}
+
+/* ================= CONTENT & TOP BAR ================= */
+
+.content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.top-bar button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= LIGHTBOX / MODAL POPUP ================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    width: 550px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+/* ================= TABLE BOX (MEDICINE LIST) ================= */
+
+.tableBox{
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    overflow-x: auto;
+}
+
+.formBox h2,
+.tableBox h2{
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* ================= FORM STYLING ================= */
+
+.formBox table{
+    width: 100%;
+}
+
+.formBox td{
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formBox input,
+.formBox select,
+.formBox textarea{
+    width: 100%;
+    margin-top: 6px;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.formBox input:focus,
+.formBox textarea:focus{
+    border: 1px solid #009688;
+}
+
+.formBox textarea{
+    height: 70px;
+    resize: none;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button,
+button.add,
+button.update,
+button.delete {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.buttons button {
+    width: 100%;
+}
+
+.add{
+    background: #009688;
+}
+
+.update{
+    background: #f9a825;
+}
+
+.delete{
+    background: #e53935;
+}
+
+.buttons button:hover,
+.add:hover,
+.update:hover,
+.delete:hover{
+    opacity: .9;
+}
+
+/* ================= TABLE STYLING ================= */
+
+.tableBox table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBox th{
+    background: #00695C;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.tableBox td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tableBox tr:hover{
+    background: #f8f8f8;
+}
+
+.tableBox img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1100px){
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSide {
+        width: 100%;
+        height: auto;
+    }
+
+    .formBox {
+        width: 95%;
+    }
+}
+
+/* ================= TABLE BOX (MEDICINE LIST - SCROLLABLE) ================= */
+
+.tableBox {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+    /* Scroll properties */
+    max-height: 520px;       /* Table box ki maximum height */
+    overflow-y: auto;        /* Vertical (Uper-Niche) scrollbar aayega jab medicines jyada ho jayengi */
+    overflow-x: auto;        /* Horizontal (Right-Left) scrollbar bhi safe side aayega */
+}
+
+/* Header Ko Sticky Banane Ke Liye (Scroll hone par Header wahi rukega) */
+.tableBox table th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #00695C;     /* Aapka original Green Header Color */
+    color: white;
+}
